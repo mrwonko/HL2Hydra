@@ -255,7 +255,15 @@
       <Project>{884c66f2-7f84-4570-ae6c-b634c1113d69}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\..\mathlib\mathlib-2010.vcxproj">
+      <Project>{884c66f2-7f84-4570-ae6c-b634c1113d69}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\..\tier1\tier1-2005.vcxproj">
+      <Project>{e1da8db8-fb4c-4b14-91a6-98bced6b9720}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tier1\tier1-2010.vcxproj">
       <Project>{e1da8db8-fb4c-4b14-91a6-98bced6b9720}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
