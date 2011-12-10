@@ -58,6 +58,8 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Client</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Client</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
@@ -70,6 +72,7 @@
 copy "$(TargetDir)"client.dll "p:\games\steam\steamapps\SourceMods\hl2hydra\bin"
 </Command>
       <Outputs>p:\games\steam\steamapps\SourceMods\hl2hydra\bin\client.dll;%(Outputs)</Outputs>
+      <Inputs>$(TargetPath)</Inputs>
     </CustomBuildStep>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -110,7 +113,7 @@ copy "$(TargetDir)"client.dll "p:\games\steam\steamapps\SourceMods\hl2hydra\bin"
       <OutputFile>$(OutDir)Client.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\..\lib\common;..\..\lib\public;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <IgnoreSpecificDefaultLibraries>libc;libcd;libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libc;libcd;libcmtd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
@@ -149,6 +152,7 @@ if exist "p:\games\steam\steamapps\SourceMods\hl2hydra\bin\client.pdb" attrib -r
 if exist "$(TargetDir)"client.pdb copy "$(TargetDir)"client.pdb "p:\games\steam\steamapps\SourceMods\hl2hydra\bin\client.pdb"
 </Command>
       <Outputs>p:\games\steam\steamapps\SourceMods\hl2hydra\bin\client.dll;p:\games\steam\steamapps\SourceMods\hl2hydra\bin\client.pdb;%(Outputs)</Outputs>
+      <Inputs>$(TargetPath)</Inputs>
     </CustomBuildStep>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
