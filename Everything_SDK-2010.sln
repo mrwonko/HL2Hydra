@@ -1,106 +1,106 @@
 Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Glview", "utils\glview\glview-2005.vcproj", "{BD1604CA-F401-4C4B-821C-251F5AE157FE}"
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Glview", "utils\glview\glview-2010.vcproj", "{BD1604CA-F401-4C4B-821C-251F5AE157FE}"
 	ProjectSection(ProjectDependencies) = postProject
 		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Height2normal", "utils\height2normal\height2normal-2005.vcproj", "{0FDD99E4-130F-493C-8202-4C0236CC47EA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Height2normal", "utils\height2normal\height2normal-2010.vcproj", "{0FDD99E4-130F-493C-8202-4C0236CC47EA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Serverplugin_empty", "utils\serverplugin_sample\serverplugin_empty-2005.vcproj", "{B6572CBE-7C7F-4FFF-94DE-AFBBBAB11C64}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Serverplugin_empty", "utils\serverplugin_sample\serverplugin_empty-2010.vcproj", "{B6572CBE-7C7F-4FFF-94DE-AFBBBAB11C64}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tgadiff", "utils\tgadiff\tgadiff-2005.vcproj", "{0CE0AF8A-A977-4538-9D63-BCB76DE1BAC6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tgadiff", "utils\tgadiff\tgadiff-2010.vcproj", "{0CE0AF8A-A977-4538-9D63-BCB76DE1BAC6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vbsp", "utils\vbsp\vbsp-2005.vcproj", "{B78B6271-B19A-4CF6-926E-40B643548E23}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vbsp", "utils\vbsp\vbsp-2010.vcproj", "{B78B6271-B19A-4CF6-926E-40B643548E23}"
 	ProjectSection(ProjectDependencies) = postProject
 		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vice", "utils\vice\vice-2005.vcproj", "{3CE6E7A9-89EC-4304-8D72-5B602B4DBD09}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vice", "utils\vice\vice-2010.vcproj", "{3CE6E7A9-89EC-4304-8D72-5B602B4DBD09}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vrad_launcher", "utils\vrad_launcher\vrad_launcher-2005.vcproj", "{914F19DF-64EC-4E7D-8B01-76477BF06479}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vrad_launcher", "utils\vrad_launcher\vrad_launcher-2010.vcproj", "{914F19DF-64EC-4E7D-8B01-76477BF06479}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vtf2tga", "utils\vtf2tga\vtf2tga-2005.vcproj", "{2A1F656C-053C-46A4-AE33-304C1D865E0C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
-		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vtfdiff", "utils\vtfdiff\vtfdiff-2005.vcproj", "{0A368DE7-D34A-48D3-B517-996BFF2D0D5D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
-		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vvis_launcher", "utils\vvis_launcher\vvis_launcher-2005.vcproj", "{4C0B9915-E8FF-4089-8927-FC934BFC1E4A}"
-	ProjectSection(ProjectDependencies) = postProject
-		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xwad", "utils\xwad\xwad-2005.vcproj", "{B850012C-98A2-42F7-B023-9F65C448D938}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "demoinfo", "utils\demoinfo\demoinfo-2005.vcproj", "{4FE3FDCA-9571-44B3-A521-C81448434490}"
-	ProjectSection(ProjectDependencies) = postProject
-		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Motionmapper", "utils\motionmapper\motionmapper-2005.vcproj", "{A882FC08-8B92-4D4F-89BF-75BCEC2BAE11}"
-	ProjectSection(ProjectDependencies) = postProject
-		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
-		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QC_Eyes", "utils\qc_eyes\QC_Eyes-2005.vcproj", "{D373436F-7DBF-468B-A3E4-601FB8556544}"
-	ProjectSection(ProjectDependencies) = postProject
-		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mathlib", "mathlib\mathlib-2005.vcproj", "{884C66F2-7F84-4570-AE6C-B634C1113D69}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tier1", "tier1\tier1-2005.vcproj", "{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Phonemeextractor", "utils\phonemeextractor\phonemeextractor-2005.vcproj", "{8A35F55B-B5C2-47A0-8C4A-5857A8E20385}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vtf2tga", "utils\vtf2tga\vtf2tga-2010.vcproj", "{2A1F656C-053C-46A4-AE33-304C1D865E0C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vgui_controls", "vgui2\vgui_controls\vgui_controls-2005.vcproj", "{BF3EDBF5-ED65-4567-B348-504C1310A1BB}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vrad_dll", "utils\vrad\vrad_dll-2005.vcproj", "{0DA02E11-F553-4DD1-83D1-F760F2D96862}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vtfdiff", "utils\vtfdiff\vtfdiff-2010.vcproj", "{0A368DE7-D34A-48D3-B517-996BFF2D0D5D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vvis_dll", "utils\vvis\vvis_dll-2005.vcproj", "{CB353257-04B0-4EC8-9E47-F2F17B2675C9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vvis_launcher", "utils\vvis_launcher\vvis_launcher-2010.vcproj", "{4C0B9915-E8FF-4089-8927-FC934BFC1E4A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xwad", "utils\xwad\xwad-2010.vcproj", "{B850012C-98A2-42F7-B023-9F65C448D938}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "demoinfo", "utils\demoinfo\demoinfo-2010.vcproj", "{4FE3FDCA-9571-44B3-A521-C81448434490}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Motionmapper", "utils\motionmapper\motionmapper-2010.vcproj", "{A882FC08-8B92-4D4F-89BF-75BCEC2BAE11}"
+	ProjectSection(ProjectDependencies) = postProject
+		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
+		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QC_Eyes", "utils\qc_eyes\QC_Eyes-2010.vcproj", "{D373436F-7DBF-468B-A3E4-601FB8556544}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mathlib", "mathlib\mathlib-2010.vcproj", "{884C66F2-7F84-4570-AE6C-B634C1113D69}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tier1", "tier1\tier1-2010.vcproj", "{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Phonemeextractor", "utils\phonemeextractor\phonemeextractor-2010.vcproj", "{8A35F55B-B5C2-47A0-8C4A-5857A8E20385}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vprojtomake", "utils\vprojtomake\vprojtomake-2005.vcproj", "{EA55446E-BC04-491C-A9F0-605DFCBB213A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vgui_controls", "vgui2\vgui_controls\vgui_controls-2010.vcproj", "{BF3EDBF5-ED65-4567-B348-504C1310A1BB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vrad_dll", "utils\vrad\vrad_dll-2010.vcproj", "{0DA02E11-F553-4DD1-83D1-F760F2D96862}"
+	ProjectSection(ProjectDependencies) = postProject
+		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
+		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vvis_dll", "utils\vvis\vvis_dll-2010.vcproj", "{CB353257-04B0-4EC8-9E47-F2F17B2675C9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
+		{884C66F2-7F84-4570-AE6C-B634C1113D69} = {884C66F2-7F84-4570-AE6C-B634C1113D69}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vprojtomake", "utils\vprojtomake\vprojtomake-2010.vcproj", "{EA55446E-BC04-491C-A9F0-605DFCBB213A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720} = {E1DA8DB8-FB4C-4B14-91A6-98BCED6B9720}
 	EndProjectSection
