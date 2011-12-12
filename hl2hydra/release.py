@@ -32,6 +32,25 @@ files = [
     "models/blackou2.mdl",
     "models/blackou3.mdl",
 
+    # missing model animation fixes
+    "models/alyx.mdl", # shared "usual" alyx
+    "models/alyx_interior.mdl", # shared (?) interior alyx
+    "models/alyx_intro.mdl", # ep1 intro alyx
+    #(ep1)
+    "models/Alyx_animat_ep1.mdl",
+    "models/Alyx_animat_ep1.ani",
+    "models/Alyx_post_ep1.mdl",
+    "models/Alyx_post_ep1.ani",
+    "models/Alyx_gest_ep1.mdl",
+    "models/Alyx_gest_ep1.ani",
+    #(hl2)
+    "models/Alyx_animat_hl2.mdl",
+    "models/Alyx_animat_hl2.ani",
+    "models/Alyx_post_hl2.mdl",
+    "models/Alyx_post_hl2.ani",
+    "models/Alyx_gest_hl2.mdl",
+    "models/Alyx_gest_hl2.ani",
+
     # mapchange override
     "maps/ep1_c17_06_l_0.lmp",
 

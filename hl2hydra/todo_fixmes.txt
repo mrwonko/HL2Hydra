@@ -1,3 +1,9 @@
 (kleiner wears his lab suit from ep2)
 blackout in ep1
 animations not present in newer files (e.g. vortigaunt, dog, alyx) - merge?
+
+CSceneEntity gman :"!target3" unable to find gesture "P_defiant" (ep1 intro - gman or vort?)
+Dog: unknown scripted sequence "E1_Dogintro"
+npc_furniture:gunship:models/crashedgunship.mdl has no sequence for act:ACT_IDLE
+CSceneEntity alyx :"Alyx" failed to start sequence "crawl_thru_gunship"
+
