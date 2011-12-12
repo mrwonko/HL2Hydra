@@ -1,0 +1,31 @@
+"GameInfo"
+{
+	game 		"HL2Hydra"
+	title 		"HALF-LIFE'"
+	title2		"== hydra =="  //todo: change to font that has h, y , r & a
+
+	type		singleplayer_only
+	
+	developer	"Willi Schinmeyer"
+	developer_url	"http://www.mrwonko.de"
+
+	FileSystem
+	{
+		SteamAppId				218 	// up-to-date orange box
+		ToolsAppId				211		// Tools will load this (ie: source SDK caches) to get things like materials\debug, materials\editor, etc.
+		
+		AdditionalContentId		220		//HL2
+		AdditionalContentId		340		//Lost Coast
+		AdditionalContentId		380		//Ep 1
+		AdditionalContentId		420		//Ep 2
+		
+		SearchPaths
+		{
+			Game				|gameinfo_path|.
+			Game				|all_source_engine_paths|ep2
+			Game				|all_source_engine_paths|episodic
+			Game				|all_source_engine_paths|lostcoast
+			Game				|all_source_engine_paths|hl2
+		}
+	}
+}

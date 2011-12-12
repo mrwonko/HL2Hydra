@@ -3,8 +3,13 @@
 *.vcxproj.filters
 *.sdf
 *.opensdf
+*.bak
 changelog
 game/client/Debug_episodic/
 game/client/Release_episodic/
 game/server/Debug_episodic/
 game/server/Release_episodic/
+ipch
+hl2hydra/cfg/config.cfg
+hl2hydra/maps/*/
+hl2hydra/models/*/
