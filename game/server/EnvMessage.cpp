@@ -216,23 +216,7 @@ void CCredits::OnRestore()
 }
 
 void CCredits::RollOutroCredits()
-{
-	//unlock next episode
-	const char *unlockedChapter = sv_unlockedchapters.GetString();
-	int nUnlockedChapter = atoi( unlockedChapter );
-	if(nUnlockedChapter <= 15) //finished HL2
-	{
-		sv_unlockedchapters.SetValue( "16" );
-	}
-	else if(nUnlockedChapter <= 20) //finished ep1
-	{
-		sv_unlockedchapters.SetValue( "21" );
-	}
-	else //finished ep2
-	{
-		sv_unlockedchapters.SetValue( "28" );
-	}
-	
+{	
 	CBasePlayer *pPlayer = UTIL_GetLocalPlayer();
 
 	CSingleUserRecipientFilter user( pPlayer );
