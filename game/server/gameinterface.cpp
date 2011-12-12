@@ -1431,7 +1431,8 @@ typedef struct
 // this list gets searched for the first partial match, so some are out of order
 static TITLECOMMENT gTitleComments[] =
 {
-#ifdef HL1_DLL
+#ifdef HL1_DLL 
+	#pragma message ( "Warning: Chapter code changed, will not work!" )
 	{ "t0a0", "#T0A0TITLE" },
 	{ "c0a0", "#HL1_Chapter1_Title" },
 	{ "c1a0", "#HL1_Chapter2_Title" },
@@ -1460,6 +1461,7 @@ static TITLECOMMENT gTitleComments[] =
 	{ "c4a3", "#HL1_Chapter18_Title"  },
 	{ "c5a1", "#HL1_Chapter19_Title"  },
 #elif defined PORTAL
+	#pragma message ( "Warning: Chapter code changed, will not work!" )
 	{ "testchmb_a_00",			"#Portal_Chapter1_Title"  },
 	{ "testchmb_a_01",			"#Portal_Chapter1_Title"  },
 	{ "testchmb_a_02",			"#Portal_Chapter2_Title"  },
@@ -1563,6 +1565,43 @@ static TITLECOMMENT gTitleComments[] =
 	{ "ep2_outland_12a", "#ep2_Chapter7_Title" },
 	{ "ep2_outland_12", "#ep2_Chapter6_Title" },
 #endif
+};
+
+// Chapter titles ordered by chapter index, i.e. array index n = chapter n + 1 (chapters start at 1) - since I'm combining the chapters of hl2, ep1 & ep2 -- mrwonko
+static const char* gOrderedChapterTitles[] =
+{
+	// Half-Life 2
+	"#HL2_Chapter1_Title",
+	"#HL2_Chapter2_Title",
+	"#HL2_Chapter3_Title",
+	"#HL2_Chapter4_Title",
+	"#HL2_Chapter5_Title",
+	"#HL2_Chapter6_Title",
+	"#HL2_Chapter7_Title",
+	"#HL2_Chapter8_Title",
+	"#HL2_Chapter9_Title",
+	"#HL2_Chapter9a_Title",
+	"#HL2_Chapter10_Title",
+	"#HL2_Chapter11_Title",
+	"#HL2_Chapter12_Title",
+	"#HL2_Chapter13_Title",
+	"#HL2_Chapter14_Title", //actually 15th due to 9a
+
+	// Episode 1
+	"#episodic_Chapter1_Title", //16th
+	"#episodic_Chapter2_Title",
+	"#episodic_Chapter3_Title",
+	"#episodic_Chapter4_Title",
+	"#episodic_Chapter5_Title", //20th
+
+	//Episode 2
+	"#ep2_Chapter1_Title", //21st
+	"#ep2_Chapter2_Title",
+	"#ep2_Chapter3_Title",
+	"#ep2_Chapter4_Title",
+	"#ep2_Chapter5_Title",
+	"#ep2_Chapter6_Title",
+	"#ep2_Chapter7_Title" //27th
 };
 
 #ifdef _XBOX
@@ -1800,64 +1839,35 @@ void UpdateChapterRestrictions( const char *mapname )
 		return;
 
 	// make sure the specified chapter title is unlocked
-	strlwr( chapterTitle );
-	
-	// Get our active mod directory name
-	char modDir[MAX_PATH];
-	if ( UTIL_GetModDir( modDir, sizeof(modDir) ) == false )
-		return;
 
-	char chapterNumberPrefix[64];
-	Q_snprintf(chapterNumberPrefix, sizeof(chapterNumberPrefix), "#%s_chapter", modDir);
-
-	const char *newChapterNumber = strstr( chapterTitle, chapterNumberPrefix );
-	if ( newChapterNumber )
+	// find the chapter's title in the chapter title array
+	for ( int i = 0; i < ARRAYSIZE(gOrderedChapterTitles); ++i)
 	{
-		// cut off the front
-		newChapterNumber += strlen( chapterNumberPrefix );
-		char newChapter[32];
-		Q_strncpy( newChapter, newChapterNumber, sizeof(newChapter) );
-
-		// cut off the end
-		char *end = strstr( newChapter, "_title" );
-		if ( end )
+		if ( Q_strcmp( chapterTitle, gOrderedChapterTitles[i] ) == 0 )
 		{
-			*end = 0;
-		}
+			//found it! The chapters start at 1 though, not 0.
+			int nNewChapter = i + 1;
 
-		int nNewChapter = atoi( newChapter );
+			// ok we have the string, see if it's newer
+			const char *unlockedChapter = sv_unlockedchapters.GetString();
+			int nUnlockedChapter = atoi( unlockedChapter );
 
-		// HACK: HL2 added a zany chapter "9a" which wreaks
-		//       havoc in this stupid atoi-based chapter code.
-		if ( !Q_stricmp( modDir, "hl2" ) )
-		{
-			if ( !Q_stricmp( newChapter, "9a" ) )
+			if ( nUnlockedChapter < nNewChapter )
 			{
-				nNewChapter = 10;
+				// ok we're at a higher chapter, unlock
+				sv_unlockedchapters.SetValue( nNewChapter );
+
+				// HACK: Call up through a better function than this? 7/23/07 - jdw
+				if ( IsX360() )
+				{
+					engine->ServerCommand( "host_writeconfig\n" );
+				}
 			}
-			else if ( nNewChapter > 9 )
-			{
-				nNewChapter++;
-			}
+
+			g_nCurrentChapterIndex = nNewChapter;
+
+			return;
 		}
-
-		// ok we have the string, see if it's newer
-		const char *unlockedChapter = sv_unlockedchapters.GetString();
-		int nUnlockedChapter = atoi( unlockedChapter );
-
-		if ( nUnlockedChapter < nNewChapter )
-		{
-			// ok we're at a higher chapter, unlock
-			sv_unlockedchapters.SetValue( nNewChapter );
-
-			// HACK: Call up through a better function than this? 7/23/07 - jdw
-			if ( IsX360() )
-			{
-				engine->ServerCommand( "host_writeconfig\n" );
-			}
-		}
-
-		g_nCurrentChapterIndex = nNewChapter;
 	}
 }
 
